@@ -1,8 +1,7 @@
-import express from "express";
-import routes from "../routes";
-const userRouter = express.Router();
-var request = require('request');
-userRouter.get("/auth", (req, res) => {
+var express = require('express');
+var router = express.Router();
+
+router.get("/auth", (req, res) => {
 
   console.log(req.query)
   const code = req.query.code;
@@ -71,11 +70,13 @@ userRouter.get("/auth", (req, res) => {
   })
 
 });
-userRouter.get("/access-token", (req, res) => {
+router.get("/access-token", (req, res) => {
 
   // console.log(req)
 
 
 });
 
-export default userRouter;
+
+
+module.exports = router;
