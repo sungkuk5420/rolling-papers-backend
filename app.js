@@ -38,7 +38,7 @@ app.use(function (err, req, res, next) {
 });
 
 
-var port = '4000';
+var port = process.env.PORT || '4000';
 
 app.listen(port, function () {
   console.log(`Wetube app listening on port ${port}!`);
