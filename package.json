@@ -7,7 +7,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "express": "^4.18.2",
     "helmet": "^3.22.0",
     "http-errors": "~1.6.3",
     "jsonwebtoken": "^8.5.1",
@@ -16,7 +16,7 @@
     "node-fetch": "^3.3.0",
     "nodemailer": "^6.4.6",
     "nodemon": "^2.0.4",
-    "passport": "^0.4.1",
+    "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1"
@@ -29,7 +29,7 @@
     "start": "node app.js"
   },
   "devDependencies": {
-    "@babel/cli": "7.8.4",
+    "@babel/cli": "^7.20.7",
     "@babel/core": "7.8.6",
     "@babel/node": "^7.8.4",
     "@babel/preset-env": "7.8.6",
