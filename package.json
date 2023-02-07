@@ -8,6 +8,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
     "helmet": "^3.22.0",
     "http-errors": "~1.6.3",
     "jsonwebtoken": "^8.5.1",
@@ -23,8 +24,8 @@
     "request": "^2.88.2"
   },
   "engines": {
-    "node": "12.13.0",
-    "npm": "6.12.0"
+    "node": "14.21.2",
+    "npm": "6.14.17"
   },
   "scripts": {
     "start": "node app.js"
