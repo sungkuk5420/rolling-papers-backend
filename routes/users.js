@@ -67,17 +67,21 @@ router.get("/auth", (req, res) => {
 
       let userId = JSON.parse(body).userId
       console.log("userId", userId)
-      const uid = userId || "some-uid";
+      const uid = userId || "error";
 
-      getAuth()
-        .createCustomToken(uid)
-        .then((customToken) => {
-          // Send token back to client
-          res.json({ ...JSON.parse(body), customToken })
-        })
-        .catch((error) => {
-          console.log('Error creating custom token:', error);
-        });
+      if (uid == "error") {
+        res.json({ ...JSON.parse(body) })
+      } else {
+        getAuth()
+          .createCustomToken(uid)
+          .then((customToken) => {
+            // Send token back to client
+            res.json({ ...JSON.parse(body), customToken })
+          })
+          .catch((error) => {
+            console.log('Error creating custom token:', error);
+          });
+      }
 
     })
 
