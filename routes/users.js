@@ -11,8 +11,8 @@ router.get("/auth", (req, res) => {
   const code = req.query.code;
   console.log(code)
   // let redirect_uri = "http://localhost:4000/auth"
-  // let redirect_uri = "http://localhost:8080/line-login"
-  let redirect_uri = "https://rolling-papers.netlify.app/line-login"
+  let redirect_uri = "http://localhost:8080/line-login"
+  // let redirect_uri = "https://rolling-papers.netlify.app/line-login"
 
 
   var options = {
